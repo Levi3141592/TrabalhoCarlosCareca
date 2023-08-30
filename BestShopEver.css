@@ -8,7 +8,16 @@ body{
 
 
 }
+.sale {
 
+    position: absolute;
+    top: 50px;
+    width: 50vw;
+    height: 50vh;    
+    
+
+
+}
 
 .main-header{
 
