@@ -1,11 +1,16 @@
 body{
+
+
     background-color: black;
+    
+
 }
 .sale {
     position: absolute;
     top: 50px;
     width: 50vw;
     height: 50vh;    
+
 }
 .main-header{
     display:flex;
@@ -17,8 +22,14 @@ body{
     top: 0;
     left: 0;
     background-color: floralwhite;
+
+}
+
+.footer{
+
 }
 .footer{
+
     display:flex;
     justify-content: space-between;
     align-items: center;
