@@ -1,0 +1,45 @@
+
+body{
+
+
+    background-color: black;
+    
+
+
+
+}
+
+
+.main-header{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: floralwhite;
+
+
+
+}
+
+
+.footer{
+
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;;
+    left: 0;
+    background-color: floralwhite;
+
+
+
+}
