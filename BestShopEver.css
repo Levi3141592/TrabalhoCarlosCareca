@@ -1,4 +1,7 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     border: 1px solid rgba(255, 0, 0, 0.342);
 }
 body{
@@ -11,19 +14,16 @@ body{
     height: 50vh;    
 
 }
-.main-header{
+header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 5em;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: floralwhite;
 
 }
-.footer{
+footer{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -36,8 +36,8 @@ body{
 }
 .card{
     width: 200px;
-    height: 350px;
-    position: relative;
+    height: 300px;
+    position: relative; /*pra promoção não sair do card*/
 }
 .prom::after{
     content: "PROMOÇÃO";
