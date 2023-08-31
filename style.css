@@ -4,12 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid rgba(255, 0, 0, 0.342); */
+    border: 1px solid rgba(255, 0, 0, 0.342); 
     font-family: 'Poppins', sans-serif;
 }
-
 body{
-    background-color: black;
+    background-color: rgb(8, 29, 53);
 }
 /* classes especificadas */
 .poppins{
@@ -50,14 +49,12 @@ nav ul{
     width: 100px;
     transition: .15s;
 }
-footer{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5em;
-    width: 100%;
-    background-color: floralwhite;
+
+.slider{
+    background-color: rgb(35, 66, 100);
+    height: 25vmax;
 }
+
 .cardes{
     display: flex;
 }
@@ -87,3 +84,11 @@ footer{
         background-position: 100% 100%;
     }
   }
+  footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    background-color: floralwhite;
+}
