@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 0, 0, 0.342); 
+    /* border: 1px solid #ff000057;  */
     font-family: 'Poppins', sans-serif;
 }
 body{
@@ -51,7 +51,7 @@ nav ul{
 }
 
 .slider{
-    background-color: rgb(35, 66, 100);
+    background-color: #234264;
     height: 25vmax;
 }
 
