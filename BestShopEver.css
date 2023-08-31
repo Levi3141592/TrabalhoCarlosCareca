@@ -28,6 +28,14 @@ header span{
     font-size: 40px;
     text-shadow: 2px 2px #6f9dda;
 }
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+nav li{
+    list-style: none;
+    width: 70px;
+}
 footer{
     display:flex;
     justify-content: space-between;
