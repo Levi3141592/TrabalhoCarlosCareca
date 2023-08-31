@@ -23,16 +23,9 @@ body{
     background-color: floralwhite;
 
 }
-<<<<<<< HEAD
-
-
-
 
 .footer{
 
-=======
-.footer{
->>>>>>> d662273e20062bb38f38d7819edc98985a3b83c3
     display:flex;
     justify-content: space-between;
     align-items: center;
