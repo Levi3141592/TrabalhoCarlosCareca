@@ -4,11 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid #ff000057;  */
+    border: 1px solid #ff000057;  
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --blue: #234264;
+    --boxshadow: 2px 3px 5px #2b3d5faf;
+}
 body{
-    background-color: rgb(8, 29, 53);
+    background-color: #081d35;
 }
 /* classes especificadas */
 .poppins{
@@ -19,6 +23,15 @@ body{
     align-items: center;
     justify-content: center;
 }
+.value{
+    color: #032b5f;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .5s;
+}
+.value::before{
+    content: "R$ ";
+}
 header{
     display:flex;
     justify-content: space-between;
@@ -27,6 +40,7 @@ header{
     width: 100%;
     background-color: floralwhite;
     padding: 0 100px;
+    position: fixed;
 }
 header span{
     font-family: 'ADLaM Display', cursive;
@@ -38,7 +52,7 @@ nav ul{
     gap: 2rem;
 }
 .navop:hover{
-    box-shadow: 2px 3px 5px #2b3d5faf;
+    box-shadow: var(--boxshadow);
     transition: .2s;
     cursor:pointer;
     transform: translateY(-2px) translateX(-2px);
@@ -51,19 +65,58 @@ nav ul{
 }
 
 .slider{
-    background-color: #234264;
+    background-color: var(--blue);
     height: 25vmax;
 }
 
+    /* === cards === */
+
 .cardes{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 75vmin;
+}
+.card::after{
+    content: "testeeee";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -3;
+}
+.card:hover .card::after{
+    z-index: -3;
 }
 .card{
     width: 200px;
-    height: 300px;
+    aspect-ratio: 5 / 7;
     position: relative; /*pra promoção não sair do card*/
+    background-color: #b7cfda;
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: .6s;
 }
-.prom::after{
+.card img{
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #ffc964;
+    object-fit: cover;
+}
+.card h3{
+    font-weight: 100;
+}
+.card:hover{
+    box-shadow: var(--boxshadow);
+    transform: translateY(-25px);
+    transition: .3s;
+}
+.card:hover .value{
+    font-size: 22.5px;
+    transition: .3s;
+}
+
+.prom::before{
     content: "PROMOÇÃO";
     position: absolute;
     top: 0;
@@ -91,4 +144,5 @@ nav ul{
     height: 5em;
     width: 100%;
     background-color: floralwhite;
+    color: #bcd9ff;
 }
