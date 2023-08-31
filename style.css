@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid #ff000057;  */
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(8, 29, 53);
+}
+/* classes especificadas */
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    background-color: floralwhite;
+    padding: 0 100px;
+}
+header span{
+    font-family: 'ADLaM Display', cursive;
+    font-size: 40px;
+    text-shadow: 2px 2px #6f9dda;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+.navop:hover{
+    box-shadow: 2px 3px 5px #2b3d5faf;
+    transition: .2s;
+    cursor:pointer;
+    transform: translateY(-2px) translateX(-2px);
+    color: rgb(102, 143, 196);
+}
+.navop{
+    box-shadow: 2px 2px 5px #22365c28;
+    width: 100px;
+    transition: .15s;
+}
+
+.slider{
+    background-color: #234264;
+    height: 25vmax;
+}
+
+.cardes{
+    display: flex;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    position: relative; /*pra promoção não sair do card*/
+}
+.prom::after{
+    content: "PROMOÇÃO";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff0000;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
+    padding: 2px 25px 2px 10px;
+    transform: translateY(10px);
+    background-image: linear-gradient(90deg, #ffee00, #ffc964,#ffee00, #ffc964);
+    background-size: 300% 300%;
+    animation: promocao-animation 2.5s linear infinite;
+  }
+  @keyframes promocao-animation{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+  }
+  footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    background-color: floralwhite;
+}
