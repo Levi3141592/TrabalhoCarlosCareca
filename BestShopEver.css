@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,8 +12,7 @@ body{
     position: absolute;
     top: 50px;
     width: 50vw;
-    height: 50vh;    
-
+    height: 50vh;
 }
 header{
     display:flex;
@@ -21,7 +21,12 @@ header{
     height: 5em;
     width: 100%;
     background-color: floralwhite;
-
+    padding: 0 100px;
+}
+header span{
+    font-family: 'ADLaM Display', cursive;
+    font-size: 40px;
+    text-shadow: 2px 2px #6f9dda;
 }
 footer{
     display:flex;
