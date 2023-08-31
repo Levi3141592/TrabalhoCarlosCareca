@@ -78,23 +78,32 @@ nav ul{
     gap: 50px;
     height: 75vmin;
 }
-.card::after{
-    content: "testeeee";
+.areacard{
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.areacard::before{
+    content: "Comprar";
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -3;
+    width: 100%;
+    background-color: #c7973f;
+    cursor: pointer;
+    color: #bcd9ff;
+    text-align: center;
 }
-.card:hover .card::after{
-    z-index: -3;
+.areacard:hover .card{
+    box-shadow: var(--boxshadow);
+    transform: translateY(-25px);
+    transition: .3s;
 }
 .card{
     width: 200px;
     aspect-ratio: 5 / 7;
     position: relative; /*pra promoção não sair do card*/
     background-color: #b7cfda;
-    border-radius: .5rem;
-    overflow: hidden;
     transition: .6s;
 }
 .card img{
@@ -106,11 +115,7 @@ nav ul{
 .card h3{
     font-weight: 100;
 }
-.card:hover{
-    box-shadow: var(--boxshadow);
-    transform: translateY(-25px);
-    transition: .3s;
-}
+
 .card:hover .value{
     font-size: 22.5px;
     transition: .3s;
