@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 0, 0, 0.342);
+    /* border: 1px solid rgba(255, 0, 0, 0.342); */
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
     background-color: black;
 }
-.sale {
-    position: absolute;
-    top: 50px;
-    width: 50vw;
-    height: 50vh;
+/* classes especificadas */
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header{
     display:flex;
@@ -30,11 +36,19 @@ header span{
 }
 nav ul{
     display: flex;
-    gap: 50px;
+    gap: 2rem;
 }
-nav li{
-    list-style: none;
-    width: 70px;
+.navop:hover{
+    box-shadow: 2px 3px 5px #2b3d5faf;
+    transition: .2s;
+    cursor:pointer;
+    transform: translateY(-2px) translateX(-2px);
+    color: rgb(102, 143, 196);
+}
+.navop{
+    box-shadow: 2px 2px 5px #22365c28;
+    width: 100px;
+    transition: .15s;
 }
 footer{
     display:flex;
