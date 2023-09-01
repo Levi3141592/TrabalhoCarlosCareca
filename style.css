@@ -159,6 +159,7 @@ nav ul{
         background-position: 100% 100%;
     }
   }
+
   #slider{ 
     position: relative; 
     overflow: hidden; 
@@ -225,6 +226,7 @@ nav ul{
 #arrow-right, #arrow-right2{ 
     transform: scale(-1); 
 }
+
   footer{
     display:flex;
     justify-content: space-between;
