@@ -10,6 +10,8 @@
 :root{
     --blue: #234264;
     --boxshadow: 2px 3px 5px #2b3d5faf;
+
+    --altbtncomprar: 30px;
 }
 body{
     background-color: #081d35;
@@ -32,6 +34,10 @@ body{
 .value::before{
     content: "R$ ";
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
 header{
     display:flex;
     justify-content: space-between;
@@ -41,6 +47,7 @@ header{
     background-color: floralwhite;
     padding: 0 100px;
     position: fixed;
+    z-index: 2;
 }
 header span{
     font-family: 'ADLaM Display', cursive;
@@ -82,22 +89,29 @@ nav ul{
     position: relative;
     border-radius: .5rem;
     overflow: hidden;
-    pointer-events: none;
+    cursor:default
 }
-.areacard a{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+
+.areacard button{
+    width: 100%; 
+    height: var(--altbtncomprar);
     background-color: #c7973f;
     cursor: pointer;
     color: #bcd9ff;
-    text-align: center;
-    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    transition: .4s;
+}
+.areacard button:hover{
+    color: #fff;
+    background-color: #dbbf43;
+    transition: .2s;
 }
 .areacard:hover .card{
     box-shadow: var(--boxshadow);
-    transform: translateY(-25px);
+    transform: translateY(calc(var(--altbtncomprar) * -1));
     transition: .3s;
 }
 
@@ -107,6 +121,7 @@ nav ul{
     position: relative; /*pra promoção não sair do card*/
     background-color: #b7cfda;
     transition: .6s;
+    z-index: 1;
 }
 .card img{
     width: 100%;
@@ -118,7 +133,7 @@ nav ul{
     font-weight: 100;
 }
 
-.card:hover .value{
+.areacard:hover .value{
     font-size: 22.5px;
     transition: .3s;
 }
@@ -126,7 +141,7 @@ nav ul{
 .prom::before{
     content: "PROMOÇÃO";
     position: absolute;
-    top: 0;
+    top: 55%;
     left: 0;
     color: #ff0000;
     clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
